@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_datapoint_header"
+            style="@style/tv_standard_black"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Data point"
+            android:textAlignment="center"
+            android:textSize="@dimen/small" />
+
+        <TextView
+            android:id="@+id/tv_matches_played_defense_header"
+            style="@style/tv_standard_black"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Matches Played Defense"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View style="@style/view_separator_horizontal" />
+
+    <ListView
+        android:id="@+id/lv_team_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+</LinearLayout>

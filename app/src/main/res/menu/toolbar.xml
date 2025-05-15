@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Refresh Button -->
+    <item
+        android:id="@+id/refresh_button"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_refresh_48"
+        android:backgroundTint="@color/colorPrimaryLight"
+        android:title="" />
+
+    <!-- 🔍Search Button -->
+    <item
+        android:id="@+id/search_button"
+        app:showAsAction="always"
+        android:icon="@drawable/magnifying_glass_icon"
+        android:title="Search" />
+
+    <!-- Map Button -->
+    <item
+        android:id="@+id/field_map_button"
+        app:showAsAction="always"
+        android:icon="@drawable/map_icon"
+        android:title="" />
+
+    <!-- Toolbar Spacer -->
+    <item
+        android:id="@+id/toolbar_spacer_end"
+        app:showAsAction="always"
+        app:actionLayout="@layout/toolbar_spacer"
+        android:title="" />
+
+</menu>
